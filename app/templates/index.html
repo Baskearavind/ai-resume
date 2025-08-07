@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2 class="mb-4">Upload Your Resume</h2>
+<form method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <input class="form-control" type="file" name="resume" accept=".pdf,.doc,.docx" required />
+  </div>
+  <button class="btn btn-primary" type="submit">Analyze</button>
+</form>
+{% endblock %}
